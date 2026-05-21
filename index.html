@@ -189,56 +189,107 @@
     <!-- قسم عن المسجد (About Section) -->
     <section id="about" class="py-16 px-6 bg-white">
         <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="text-3xl font-bold text-emerald-900 mb-6">عن مسجد أشوى (Ashwa Mosque)</h2>
-            <p class="text-lg text-slate-600 leading-relaxed mb-6">
-                تأسس مسجد أشوى ليكون منارة دينية وعلمية تجمع المسلمين على طاعة الله وتعزز قيم التسامح والتكافل الاجتماعي. نسعى لتقديم بيئة إيمانية مريحة للمصلين وخدمات تعليمية متميزة لجميع الفئات العمرية.
-            </p>
-            <div class="inline-block bg-amber-50 border border-amber-200 rounded-lg p-4 text-amber-800 font-semibold">
-                🕌 يتسع المسجد لأكثر من 100 مصلٍ .
+            <h2 class="text-3xl font-bold text-emerald-900 mb-6">عن مسجد أش    <header class="bg-emerald-900 text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold text-amber-400 mb-2">مسجد الشهداء</h1>
+            <div id="current-day" class="text-xl font-bold text-emerald-100"></div>
+            <div class="flex justify-center gap-4 text-sm opacity-90 mt-1">
+                <span id="current-date-hijri"></span>
+                <span class="text-amber-500">|</span>
+                <span id="current-date-gregorian"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-emerald-950 text-white py-12 text-center">
+        <h2 class="text-2xl font-bold mb-2">مواقيت الصلاة وحركة القمر</h2>
+        <p class="text-emerald-200 text-sm">الإحداثيات: 36.0094, 42.3529</p>
+    </section>
+
+    <section class="py-10 px-4 -mt-10">
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+                <div id="card-Fajr" class="bg-white p-4 rounded-xl shadow-md text-center border-b-4 border-emerald-600">
+                    <p class="text-slate-500 text-sm">الفجر</p>
+                    <p id="Fajr" class="text-xl font-bold text-emerald-900">--:--</p>
+                </div>
+                <div id="card-Dhuhr" class="bg-white p-4 rounded-xl shadow-md text-center border-b-4 border-emerald-600">
+                    <p class="text-slate-500 text-sm">الظهر</p>
+                    <p id="Dhuhr" class="text-xl font-bold text-emerald-900">--:--</p>
+                </div>
+                <div id="card-Asr" class="bg-white p-4 rounded-xl shadow-md text-center border-b-4 border-emerald-600">
+                    <p class="text-slate-500 text-sm">العصر</p>
+                    <p id="Asr" class="text-xl font-bold text-emerald-900">--:--</p>
+                </div>
+                <div id="card-Maghrib" class="bg-white p-4 rounded-xl shadow-md text-center border-b-4 border-emerald-600">
+                    <p class="text-slate-500 text-sm">المغرب</p>
+                    <p id="Maghrib" class="text-xl font-bold text-emerald-900">--:--</p>
+                </div>
+                <div id="card-Isha" class="bg-white p-4 rounded-xl shadow-md text-center border-b-4 border-emerald-600">
+                    <p class="text-slate-500 text-sm">العشاء</p>
+                    <p id="Isha" class="text-xl font-bold text-emerald-900">--:--</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <div class="bg-slate-800 text-white p-4 rounded-xl shadow-md text-center">
+                    <span class="text-amber-400 text-xs mb-1 block">بزوغ القمر</span>
+                    <p id="Moonrise" class="text-lg font-bold">--:--</p>
+                </div>
+                <div class="bg-slate-800 text-white p-4 rounded-xl shadow-md text-center">
+                    <span class="text-amber-400 text-xs mb-1 block">أفول القمر</span>
+                    <p id="Moonset" class="text-lg font-bold">--:--</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- قسم التبرع (Donate Section) -->
-    <section id="donate" class="py-16 px-6 bg-emerald-900 text-white text-center">
-        <div class="container mx-auto max-w-2xl">
-            <h2 class="text-3xl font-bold text-amber-400 mb-4">ساهم في عمارة بيت الله</h2>
-            <p class="text-slate-200 mb-8">صدقتك الجارية تسهم في صيانة المسجد، دعم حلقات التحفيز، وإعانة الفقراء.</p>
-            <div class="bg-emerald-950 p-6 rounded-xl border border-emerald-800 max-w-sm mx-auto text-right">
-                <p class="mb-2 text-sm text-slate-400">الحساب البنكي الرسمي للمسجد:</p>
-                <p class="font-mono font-bold text-lg text-amber-400 mb-4">IBAN: AE00 0000 0000 0000 0000 000</p>
-                <p class="text-sm text-slate-400">أو عبر زين كاش / المحافظ الإلكترونية:</p>
-                <p class="font-bold text-lg text-white">0770XXXXXXX</p>
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl text-center">
+            <h2 class="text-2xl font-bold mb-6 text-emerald-900">موقعنا على الخارطة</h2>
+            <div class="rounded-2xl overflow-hidden shadow-2xl h-80 border-4 border-emerald-100">
+                <iframe src="https://maps.google.com/maps?q=36.009469,42.352919&z=17&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- قسم التواصل (Contact Section) -->
-    <section id="contact" class="py-16 px-6 bg-slate-100">
-        <div class="container mx-auto max-w-lg">
-            <h2 class="text-3xl font-bold text-center text-emerald-900 mb-8">تواصل معنا</h2>
-            <form class="space-y-4">
-                <div>
-                    <label class="block text-sm font-semibold mb-1">الاسم الكريم</label>
-                    <input type="text" class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
-                </div>
-                <div>
-                    <label class="block text-sm font-semibold mb-1">البريد الإلكتروني أو رقم الهاتف</label>
-                    <input type="text" class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
-                </div>
-                <div>
-                    <label class="block text-sm font-semibold mb-1">رسالتك أو استفسارك</label>
-                    <textarea rows="4" class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
-                </div>
-                <button type="button" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 rounded-lg transition shadow">إرسال الرسالة</button>
-            </form>
-        </div>
-    </section>
+    <script>
+        const lat = 36.009469; 
+        const lng = 42.352919;
+        const method = 4;
 
-    <!-- تذييل الصفحة (Footer) -->
-    <footer class="bg-emerald-950 text-slate-400 py-6 text-center text-sm border-t border-emerald-900">
-        <p>&copy; 2026 مسجد الشهداء - Ashwa Mosque. جميع الحقوق محفوظة.</p>
-    </footer>
+        function formatTime12(time) {
+            if (!time || time === "-") return "غير متاح";
+            let [hours, minutes] = time.split(':');
+            hours = parseInt(hours);
+            const ampm = hours >= 12 ? 'م' : 'ص';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            return `${hours}:${minutes} ${ampm}`;
+        }
 
+        async function getPrayerData() {
+            try {
+                const response = await fetch(`https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lng}&method=${method}`);
+                const data = await response.json();
+                const timings = data.data.timings;
+                const dateInfo = data.data.date;
+
+                const prayers = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+                prayers.forEach(p => document.getElementById(p).innerText = formatTime12(timings[p]));
+
+                document.getElementById('Moonrise').innerText = formatTime12(timings.Moonrise);
+                document.getElementById('Moonset').innerText = formatTime12(timings.Moonset);
+
+                document.getElementById('current-day').innerText = dateInfo.hijri.weekday.ar;
+                document.getElementById('current-date-hijri').innerText = `${dateInfo.hijri.day} ${dateInfo.hijri.month.ar} ${dateInfo.hijri.year} هـ`;
+                document.getElementById('current-date-gregorian').innerText = `${dateInfo.gregorian.day}-${dateInfo.gregorian.month.en}-${dateInfo.gregorian.year} م`;
+
+            } catch (error) {
+                console.error("خطأ في جلب البيانات", error);
+            }
+        }
+        getPrayerData();
+    </script>
 </body>
 </html>
