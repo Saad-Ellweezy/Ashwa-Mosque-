@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسجد أشوى - Ashwa Mosque</title>
+    <!-- تضمين مكتبة Tailwind CSS للتصميم العصري -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- خطوط جوجل (خط مرئي ومناسب للمواقع الإسلامية) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- شريط التنقل (Navbar) -->
+    <header class="bg-emerald-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-wide text-amber-400">
+                Ashwa Mosque <span class="text-white text-base block font-normal">مسجد أشوى</span>
+            </div>
+            <nav class="hidden md:flex space-x-reverse space-x-6 text-lg">
+                <a href="#home" class="hover:text-amber-400 transition">الرئيسية</a>
+                <a href="#prayer-times" class="hover:text-amber-400 transition">مواقيت الصلاة</a>
+                <a href="#services" class="hover:text-amber-400 transition">الخدمات والأنشطة</a>
+                <a href="#about" class="hover:text-amber-400 transition">عن المسجد</a>
+                <a href="#contact" class="hover:text-amber-400 transition">اتصل بنا</a>
+            </nav>
+            <a href="#donate" class="bg-amber-500 hover:bg-amber-600 text-emerald-950 font-bold px-5 py-2 rounded-full transition shadow-md">
+                تبرع للمسجد
+            </a>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section id="home" class="relative bg-emerald-950 text-white py-32 px-6 text-center overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center"></div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-amber-400">مرحباً بكم في مسجد أشوى</h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-8 leading-relaxed">
+                "إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ" <br>
+                مركز للعبادة، التعليم، وخدمة المجتمع.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#prayer-times" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold transition">مواقيت الصلاة</a>
+                <a href="#services" class="border border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-emerald-950 px-6 py-3 rounded-lg font-semibold transition">أنشطتنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مواقيت الصلاة (Prayer Times) -->
+    <section id="prayer-times" class="py-16 px-6 bg-white shadow-inner">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-emerald-900 mb-12 relative">
+                مواقيت الصلاة اليوم
+                <span class="block w-20 h-1 bg-amber-400 mx-auto mt-3 rounded"></span>
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4 text-center">
+                <div class="bg-emerald-50 p-6 rounded-xl border-t-4 border-emerald-700 shadow-sm">
+                    <span class="block text-emerald-800 font-bold text-xl">الفجر</span>
+                    <span class="block text-2xl font-semibold mt-2 text-slate-700">04:15 ص</span>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-xl border-t-4 border-emerald-700 shadow-sm">
+                    <span class="block text-emerald-800 font-bold text-xl">الشورق</span>
+                    <span class="block text-2xl font-semibold mt-2 text-slate-400">05:45 ص</span>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-xl border-t-4 border-emerald-700 shadow-sm">
+                    <span class="block text-emerald-800 font-bold text-xl">الظهر</span>
+                    <span class="block text-2xl font-semibold mt-2 text-slate-700">12:30 م</span>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-xl border-t-4 border-emerald-700 shadow-sm">
+                    <span class="block text-emerald-800 font-bold text-xl">العصر</span>
+                    <span class="block text-2xl font-semibold mt-2 text-slate-700">03:45 م</span>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-xl border-t-4 border-emerald-700 shadow-sm">
+                    <span class="block text-emerald-800 font-bold text-xl">المغرب</span>
+                    <span class="block text-2xl font-semibold mt-2 text-slate-700">06:55 م</span>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-xl border-t-4 border-emerald-700 shadow-sm">
+                    <span class="block text-emerald-800 font-bold text-xl">العشاء</span>
+                    <span class="block text-2xl font-semibold mt-2 text-slate-700">08:25 م</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات والأنشطة (Services) -->
+    <section id="services" class="py-16 px-6 bg-slate-50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold text-center text-emerald-900 mb-12">
+                خدمات المسجد والأنشطة المجتمعية
+                <span class="block w-20 h-1 bg-amber-400 mx-auto mt-3 rounded"></span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- خدمة 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-slate-100 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center text-2xl font-bold mb-6">📖</div>
+                    <h3 class="text-xl font-bold text-emerald-950 mb-3">تحفيظ القرآن الكريم</h3>
+                    <p class="text-slate-600 leading-relaxed">حلقات يومية وأسبوعية مخصصة للأطفال والشباب لتعلم أحكام التجويد وحفظ كتاب الله.</p>
+                </div>
+                <!-- خدمة 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-slate-100 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center text-2xl font-bold mb-6">📢</div>
+                    <h3 class="text-xl font-bold text-emerald-950 mb-3">الدروس والمحاضرات</h3>
+                    <p class="text-slate-600 leading-relaxed">محاضرات دينية وتوعوية يلقيها نخبة من المشايخ والعلماء لزيادة الوعي الفقهي والتربوي.</p>
+                </div>
+                <!-- خدمة 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-slate-100 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center text-2xl font-bold mb-6">🤝</div>
+                    <h3 class="text-xl font-bold text-emerald-950 mb-3">العمل الخيري والإغاثة</h3>
+                    <p class="text-slate-600 leading-relaxed">جمع التبرعات وتوزيع المساعدات والوجبات على العائلات المتعففة والمحتاجة في المنطقة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عن المسجد (About Section) -->
+    <section id="about" class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-emerald-900 mb-6">عن مسجد أشوى (Ashwa Mosque)</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                تأسس مسجد أشوى ليكون منارة دينية وعلمية تجمع المسلمين على طاعة الله وتعزز قيم التسامح والتكافل الاجتماعي. نسعى لتقديم بيئة إيمانية مريحة للمصلين وخدمات تعليمية متميزة لجميع الفئات العمرية.
+            </p>
+            <div class="inline-block bg-amber-50 border border-amber-200 rounded-lg p-4 text-amber-800 font-semibold">
+                🕌 يتسع المسجد لأكثر من 1,000 مصلٍ ويحتوي على مصلى خاص بالنساء وقاعة للمناسبات والتعليم.
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التبرع (Donate Section) -->
+    <section id="donate" class="py-16 px-6 bg-emerald-900 text-white text-center">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-3xl font-bold text-amber-400 mb-4">ساهم في عمارة بيت الله</h2>
+            <p class="text-slate-200 mb-8">صدقتك الجارية تسهم في صيانة المسجد، دعم حلقات التحفيز، وإعانة الفقراء.</p>
+            <div class="bg-emerald-950 p-6 rounded-xl border border-emerald-800 max-w-sm mx-auto text-right">
+                <p class="mb-2 text-sm text-slate-400">الحساب البنكي الرسمي للمسجد:</p>
+                <p class="font-mono font-bold text-lg text-amber-400 mb-4">IBAN: AE00 0000 0000 0000 0000 000</p>
+                <p class="text-sm text-slate-400">أو عبر زين كاش / المحافظ الإلكترونية:</p>
+                <p class="font-bold text-lg text-white">0770XXXXXXX</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل (Contact Section) -->
+    <section id="contact" class="py-16 px-6 bg-slate-100">
+        <div class="container mx-auto max-w-lg">
+            <h2 class="text-3xl font-bold text-center text-emerald-900 mb-8">تواصل معنا</h2>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold mb-1">الاسم الكريم</label>
+                    <input type="text" class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-1">البريد الإلكتروني أو رقم الهاتف</label>
+                    <input type="text" class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-1">رسالتك أو استفسارك</label>
+                    <textarea rows="4" class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+                </div>
+                <button type="button" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 rounded-lg transition shadow">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer class="bg-emerald-950 text-slate-400 py-6 text-center text-sm border-t border-emerald-900">
+        <p>&copy; 2026 مسجد أشوى - Ashwa Mosque. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
